@@ -1,0 +1,319 @@
+/* div class=".wrapper" .wrapper keeps body content out of header section */ 
+
+/*Begin global fonts for all pages */
+.pagewrapper {
+
+	max-width: auto;
+}
+
+.header{
+	flex-flow: column;
+	height: 66px;
+	width:100%;
+	border-bottom: solid;
+	border-bottom-width: 3px;
+	border-color: #dddddd;
+	
+	}
+
+#headername {
+	font-family: 'Georgia', Times, Times New Roman, serif;
+	background-color: #4aaaa5;
+	color: white;
+	padding: 12px 25px 12px 25px;
+	border-left: 25px;
+	position: absolute;
+	margin: 0% 0% 0% 12%;
+	}
+
+#directory {
+	float: right;
+	word-spacing: 15px;
+	margin: 2% 22% 0% 5%;
+	font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+	color: #777777;
+	text-decoration: none;
+
+	}
+
+	.footer {
+
+	clear: both;
+	width: 100%;
+	height: 70px;
+	background-color: #666666;
+	border-color: #cccccc;
+	position: absolute;
+	}
+
+#copyright {
+
+	text-align: center;
+	padding-top: 10px;
+	color: #777777;
+
+}
+
+hr {
+	
+	color: #666666;
+	width: 88%; 
+	border-width: 2px;
+
+}
+
+h1,h2,h3 {
+
+	font-family: 'Georgia', Times, Times New Roman, serif;
+
+}
+
+/* End global fonts and styling */
+
+/*Index Styling*/
+/*box surrouning body content css*/
+
+.bodycontent {
+	
+	background-image: url("xv.png");
+	display: inline-block;
+	text-align: left;
+	border-bottom-style: solid;
+	border-bottom-width: 7px;
+	border-color: #4aaaa5;
+	width: 100%;
+			
+	}
+
+/*box containing left side  */
+.leftcontent {
+	
+	font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+	color: #777777;
+	display: inline-block;
+	width: 650px;
+	float:left;
+	margin: 25px 50px 0px 100px;
+	padding-bottom: 8px;	
+	background-color: white;
+	padding-left: 15px;
+	border: solid;
+	border-color: #cccccc;
+	border-width: 1px;
+
+	}
+
+#aboutme { 
+	font-family: 'Georgia', Times, Times New Roman, serif;
+	color: #4aaaa5;
+	padding-top: 4%;
+	margin-left: 10%;
+	font-size: 30px
+	margin-bottom: 30px;
+	
+}
+
+
+#picture {
+	float: left;
+	padding-right: 10px;
+	padding-left: 5px;
+	}
+
+/* box containing right side */
+
+.rightcontent {
+
+	font-family: 'Georgia', Times, Times New Roman, serif;
+	color: #4aaaa5;
+	text-align:center;
+	position: relative;
+	background-color: white;
+	width: 270px;
+	border:solid;
+	border-color: #cccccc;
+	border-width: 1px;
+	margin-top: 25px;
+	float: left;
+		}
+
+	#linkedin {
+		width: 75px;
+		margin-bottom: 30px;
+		
+	}
+
+	#github {
+		width: 75px;
+		margin-bottom: 30px;
+	}
+
+	#stackoverflow {
+		margin-bottom: 30px;
+		width: 75px
+	}
+/*End index styling */
+
+/*begin "portfolio" styling */
+
+
+	.portfolioleftcontent{ 
+	font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+	color: #777777;
+	display: inline-block;
+	width: 650px;
+	float:left;
+	margin: 25px 50px 0px 100px;
+	padding-bottom: 8px;	
+	background-color: white;
+	padding-left: 15px;
+	border: solid;
+	border-color: #cccccc;
+	border-width: 1px;
+
+	}
+
+.picture1 {
+
+		position: relative;
+		width: 45%;
+		margin-right: 15px;
+		margin-bottom: 25px;
+
+	}
+
+	#hangman {
+		position: absolute;
+		text-align: center;
+		width: 150;
+		left: 0px;
+		bottom: 0px;
+		background-color: #4aaaa5;
+		color: white;
+		padding: 15px 80px 15px 80px;
+		
+	}
+	
+	.picture2 {
+
+		position: relative;
+		width: 45%;
+
+	}
+
+	#rpg {
+		position: absolute;
+		text-align: center;
+		width: 150;
+		left: 0px;
+		bottom: 0px;
+		background-color: #4aaaa5;
+		color: white;
+		padding: 15px 80px 15px 80px;
+		
+	}
+	
+	.picture3 {
+
+		position: relative;
+		width: 60%;		
+		}
+
+	#triviagame {
+		position: absolute;
+		text-align: center;
+		width: 150;
+		left: 0px;
+		bottom: 0px;
+		background-color: #4aaaa5;
+		color: white;
+		padding: 15px 80px 15px 80px;
+	}
+	
+.picture4 {
+
+		position: relative;
+		width: 60%;
+	}
+
+#rutgers{
+		position: absolute;
+		text-align: center;
+		width: 150;
+		left: 0px;
+		bottom: 0px;
+		background-color: #4aaaa5;
+		color: white;
+		padding: 15px 80px 15px 80px;
+	}
+
+
+.picture5 {
+
+		position: relative;
+		width: 60%;
+	}
+
+#rock{
+
+		position: absolute;
+		text-align: center;
+		width: 150;
+		left: 0px;
+		bottom: 0px;
+		background-color: #4aaaa5;
+		color: white;
+		padding: 15px 80px 15px 80px;
+	}
+
+	
+/* Begin CSS for Contact Form */
+	
+	h4 {
+		margin-bottom:2px;
+		margin-left: 2px;
+	}
+
+	.contactform {
+		margin-left: 40px;
+	}
+
+	#form {
+
+			margin-top: 0px;
+			width: 95%;
+			box-sizing: border-box;
+			margin-bottom: 0px;
+	}
+
+	#message{
+
+			width: 95%;
+			height: 200px;
+			
+	}
+
+
+	@media only screen and (max-width: 600px) {
+
+		.pagewrapper {
+
+			width: 80%;
+	}
+	
+		.aboutme {
+			width: 80%;
+		}
+
+		.leftcontent { 
+		
+			width: 80%;
+
+			 }
+		.rightcontent {
+			text-align: left;
+			width: 80%;
+			margin-left: 100px;
+		}
+
+	}
