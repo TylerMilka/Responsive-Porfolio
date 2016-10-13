@@ -7,7 +7,7 @@
 }
 
 .header{
-	flex-flow: column;
+	
 	height: 66px;
 	width:100%;
 	border-bottom: solid;
@@ -23,20 +23,20 @@
 	padding: 12px 25px 12px 25px;
 	border-left: 25px;
 	position: absolute;
-	margin: 0% 0% 0% 12%;
+	margin: 0% 0% 0% 9.5%;
 	}
 
 #directory {
 	float: right;
 	word-spacing: 15px;
-	margin: 2% 22% 0% 5%;
+	margin: 2% 22% 0% ;
 	font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
 	color: #777777;
 	text-decoration: none;
 
 	}
 
-	.footer {
+.footer {
 
 	clear: both;
 	width: 100%;
@@ -49,7 +49,7 @@
 #copyright {
 
 	text-align: center;
-	padding-top: 10px;
+	padding-top: 20px;
 	color: #777777;
 
 }
@@ -65,6 +65,7 @@ hr {
 h1,h2,h3 {
 
 	font-family: 'Georgia', Times, Times New Roman, serif;
+	font-weight: bold;
 
 }
 
@@ -271,7 +272,7 @@ h1,h2,h3 {
 	
 	h4 {
 		margin-bottom:2px;
-		margin-left: 2px;
+		margin-left: 0px;
 	}
 
 	.contactform {
@@ -290,30 +291,277 @@ h1,h2,h3 {
 
 			width: 95%;
 			height: 200px;
+
+	}
+
+	@media only screen and (max-width: 980px) {
+
+	.header{
+	
+	height: 66px;
+	width:100%;
+	border-bottom: solid;
+	border-bottom-width: 3px;
+	border-color: #dddddd;
+	
+	}
+
+#headername {
+	font-family: 'Georgia', Times, Times New Roman, serif;
+	background-color: #4aaaa5;
+	color: white;
+	padding: 12px 25px 12px 25px;
+	border-left: 25px;
+	position: absolute;
+	margin: 0% 0% 0% 9.5%;
+	}
+
+#directory {
+	float: right;
+	word-spacing: 15px;
+	margin: 2% 22% 0% ;
+	font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+	color: #777777;
+	text-decoration: none;
+	}
+
+	h4 {
+		margin-bottom:2px;
+		margin-left: 0px;
+	}
+	
+	.bodycontent {
+	
+	background-image: url("xv.png");
+	display: inline-block;
+	text-align: left;
+	border-bottom-style: solid;
+	border-bottom-width: 7px;
+	border-color: #4aaaa5;
+	width: 100%;
 			
 	}
+
+	.leftcontent {
+	
+	font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+	color: #777777;
+	display: inline-block;
+	width: 400px;
+	float:left;
+	margin: 25px 50px 0px 60px;
+	padding-bottom: 8px;	
+	background-color: white;
+	padding-left: 15px;
+	border: solid;
+	border-color: #cccccc;
+	border-width: 1px;
+	}
+
+	#aboutme { 
+	font-family: 'Georgia', Times, Times New Roman, serif;
+	color: #4aaaa5;
+	padding-top: 4%;
+	margin-left: 2	%;
+	font-size: 30px
+	margin-bottom: 30px;
+	
+}
+
+	.contactform {
+		margin-left: 10px;
+	}
+
+	#form {
+
+		margin-top: 0px;
+		width: 95%;
+		box-sizing: border-box;
+		margin-bottom: 0px;
+	}
+
+	#message{
+
+			width: 95%;
+			height: 200px;
+
+	}
+
+	.rightcontent {
+
+	font-family: 'Georgia', Times, Times New Roman, serif;
+	color: #4aaaa5;
+	text-align:center;
+	position: relative;
+	background-color: white;
+	width: 270px;
+	border:solid;
+	border-color: #cccccc;
+	border-width: 1px;
+	margin-top: 25px;
+	float: left;
+		}
+
+
+
+	}
+
+	
+	@media only screen (max-width: 768px) {
+
+	/* All three pages */ 
+	.pagewrapper {
+
+			width: 100%;
+	}
+		
+	.header {
+
+			height: 66px;
+			float: center;
+
+		}
+
+	#headername {
+	font-family: 'Georgia', Times, Times New Roman, serif;
+	background-color: #4aaaa5;
+	color: white;
+	padding: 12px 25px 12px 25px;
+	border-left: 25px;
+	position: absolute;
+	margin: 0% 0% 0% 9.5%;
+	}
+
+	#directory {
+		float: right;
+		word-spacing: 20px;
+		margin: 2% 5% 0% 5%;
+		font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+		color: #777777;
+		text-decoration: none;
+
+	}
+
+	h4 {
+		float: left;
+		margin-bottom:2px;
+	
+	}
+
+	#picture {
+		float: left;
+		padding-right: 10px;
+		padding-left: 5px;
+		width: 80%;
+
+	}
+
+
+	/* Contact */
+	.contactform {
+		margin-left: 0px;
+	}
+
+	#aboutme {
+		
+		width: 100%;
+		margin-left: 0;
+			}
+
+	.leftcontent { 
+		
+			width: 100%;
+			margin-left: 0px;
+			float: left;	
+
+		 }
+
+	.rightcontent {
+			text-align: left;
+			width: 100%;
+			margin-left: 4px;
+			margin-bottom: 10px;
+
+		}
+
+
+	}
+
 
 
 	@media only screen and (max-width: 600px) {
 
-		.pagewrapper {
+	/* All three pages */ 
+	.pagewrapper {
 
-			width: 80%;
+			width: 100%;
 	}
-	
-		.aboutme {
-			width: 80%;
-		}
-
-		.leftcontent { 
 		
-			width: 80%;
+	.header {
 
-			 }
-		.rightcontent {
+			height: 116px;
+			float: center;
+
+
+		}
+
+	#headername {
+			width: 100%;
+			text-align: center;
+			margin-left: auto;
+		}
+
+	#directory {
+
+			position: relative;
+			padding-top: 65;
+			float: right;
+			word-spacing: 60px;
+
+		}
+
+	h4 {
+		float: left;
+		margin-bottom:2px;
+	
+	}
+
+	/* Contact */
+	.contactform {
+		margin-left: 0px;
+	}
+
+	#picture {
+	float: left;
+	padding-right: 10px;
+	padding-left: 5px;
+	margin-bottom: 2px;
+	width: auto;
+	}
+
+
+	#aboutme {
+		
+		width: 100%;
+		margin-left: 0;
+	}
+
+	.leftcontent { 
+		
+			width: 100%;
+			margin-left: 0px;
+			float: left;	
+
+	 }
+
+	.rightcontent {
 			text-align: left;
-			width: 80%;
-			margin-left: 100px;
+			width: 100%;
+			margin-left: 1px;
+			margin-bottom: 10px;
+
 		}
 
 	}
+
+
