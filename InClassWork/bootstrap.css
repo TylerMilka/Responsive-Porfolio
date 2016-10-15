@@ -1,0 +1,21 @@
+.jumbotron {
+
+
+}
+
+header {
+
+	border: 2px;
+	color: blue;
+}
+
+.container {
+	background-color: solid green;
+
+}
+
+.col-md-4 {
+
+		height: 100px;
+		background-color: green;
+}

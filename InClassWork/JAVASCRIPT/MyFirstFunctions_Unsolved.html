@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>My First Function</title>
+</head>
+<body>
+	
+	<script>
+
+		// FUNCTIONS
+		// ================================================================================
+
+		// Creates Function called "adder" with three arguments (x, y, z) that get passed into it and console.log the result
+		function adder(x, y, z){
+
+			console.log(x+y+z);
+
+		}
+
+
+
+		// Creates a Function called "multiplier" with three arguments (x, y, z) that get passed into it and console.log the result
+
+		function multiplier(x, y, z){
+
+			console.log(x*y*z);
+		}
+
+		// Creates a function called "isString" with three arguments (x, y, z) that get passed into it and console.log whether all three are a string or not
+
+		function isString(x, y, z){
+			var isX = (typeof(x) === 'string');//boolean
+			var isY = (typeof(y) === 'string'); //boolean
+			var isZ = (typeof(z) === 'string'); //boolean
+		 
+		 	if (isX && isY && isZ) {
+		 		console.log("this is a string");
+		 	else console.log("this is not a string");
+		 	}
+			
+	
+
+
+
+		// Creates a function called "vowelChecker" that takes in a single argument (x) and console.log's whether the value is a vowel or not
+
+		function vowelchecker(x, y, z){
+
+		//Then checl if that first letter is a vowel
+		firstCharacter= x.toLowerCase()charAt(0);
+
+	if (firstCharacter === "a" || firstCharacter === "e"||
+		firstCharacter === "i" || firstCharacter === "o"||
+		firstCharacter === "u");
+		console.log("this is a voweol");
+	else console.log("this is not a vowel");
+
+
+
+		// FUNCTION EXECUTION
+		// ================================================================================
+
+		// Add in the lines of code below necessary to "call" the functions you created above.
+		
+		
+		adder(6, 3, 9);	
+		
+		console.log("-------------------");
+
+		
+		// Call the multiplier function here. 
+
+		multiplier( 3, 4, 6); 
+		console.log("-------------------");
+
+
+		// Call the isString function here.
+
+		isString("Welcome", "Home", "is", "the",);		
+		console.log("-------------------");
+
+
+		vowelchecker("is", "and", "welcome", "owl");
+		// Call the vowelChecker function here.
+
+
+	</script>
+
+</body>
+</html>

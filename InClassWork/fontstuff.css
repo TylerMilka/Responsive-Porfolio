@@ -1,0 +1,36 @@
+#duh {
+
+	line-height: 100%;
+	font-family: 'Lobster', cursive;
+	letter-spacing;
+	font-weight: bold;
+}
+
+#blah { 
+
+	font-family: 'Asap', sans-serif;
+ }
+
+
+/* changes style when mouse hovers over it */
+
+h1:hover {
+ 	background-color: green;
+ 	line-through;
+	}
+
+h1: focus{
+
+	text-decoration: line-through;
+ }
+
+ h1: active {
+
+ 	visibility: none;
+}	
+
+
+ 	text
+
+
+ }
