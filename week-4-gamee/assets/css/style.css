@@ -1,0 +1,90 @@
+
+body {
+	background-image: url("backgroundimg.jpg");
+}
+
+
+#CrystalCollector {
+	
+	align-self: left;
+	font-size: 30px;
+	margin: 15px 15px 15px 0px;
+	padding: 25px 25px 25px 25px;
+	background-color: orange;
+	color: white;
+	font-weight: bold;
+	position: relative;
+
+}
+
+#instructions {
+
+	background-color: white;
+	color: green;
+	font-size: 20px;
+	position: relative;
+
+
+}
+
+#randomnumber {
+
+	text-align: left;
+	font-size: 40px;
+	position: relative;
+	padding: 25px 25px 50px 5px;
+	background-color: green;
+}
+
+#winloss {
+
+	position: relative;
+	padding: 25px 25px 30px 25px;
+	background-color: turquoise;
+	line-height: 40px;
+	font-size: 20px;
+		
+}
+
+#yourtotal{
+
+	background-color: yellow;
+	font-size: 25px;
+	color: white;
+}
+
+#totalscore {
+
+	background-color: yellow;
+	font-size: 40px;
+	color: white;
+	padding-bottom: 60px;
+}
+
+#redGem	{
+	
+	margin: 10px 10px 8px 10px;
+	height: 100px;
+	width: 100px;
+}
+
+#blueGem	{
+	
+	margin: 10px 10px 8px 10px;
+	height: 100px;
+	width: 100px;
+}
+
+#yellowGem	{
+	
+	margin: 10px 10px 8px 10px;
+	height: 100px;
+	width: 100px;
+}
+
+#greenGem	{
+	
+	margin: 10px 10px 8px 10px;
+	height: 100px;
+	width: 100px;
+}
