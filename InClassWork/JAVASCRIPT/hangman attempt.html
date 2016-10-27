@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>The Psychic Game</title>
+
+		<link type="text/javascript" src="assetse/javascript/game.js"
+		<script src="https://code.jquery.com/jquery-2.2.3.js" integrity="sha256-laXWtGydpwqJ8JA+X9x2miwmaiKhn8tVmOVEigRNtP4=" crossorigin="anonymous"></script>
+</head>
+<body>
+<h1> The Psychic Game </h1>
+
+<h3> Guess What Letter I'm thinking of: </h3> 
+
+
+<script type="text/javascript">
+
+//Variables
+var guessLeft =5;
+var wins = 0;
+var losses = 0;
+var wordBank = ['tree', 'plant', 'shrub'];
+
+var word = ["tree"];
+display = [false,false,false];
+//random word from array
+
+function makeDisplayString (word, display){
+	display.map(function(el, idx) { return el? word[idx]: "_"}).join(" "); 
+}	
+
+w
+
+
+
+//records user keypress and sets var userGuess to that and makes sure the letter is recorded as lowercase 
+document.onkeyup = function(event) {
+	var userGuess = String.fromCharCode(event.keyCode).toLowerCase(); 
+
+	if (word.indexOf(userGuess) > 1 {
+		alert('YOU GOT IT!');
+		placeHolders = placeholders.replace(placeholders[(word.indexOf(userGuess))], userGuess)
+	
+	} else {
+		alert('Not Quite Right');
+		guessesLeft--;
+	}
+
+console.log(placeholders);
+console.log(word);
+
+}
+}
+
+
+</script>
+<p id = "wins"> Wins:  </p>
+<p id="losses"> Losses </p>
+<p id="guessesLeft"> Guesses Left </p>
+<p id="guessesSoFar"> Guesses So Far </p>
+
+<script type="text/javascript"> 
+
+
+
+
+
+
+
+
+</script>
+
+
+</body>
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>The Psychic Game</title>
+
+		<link type="text/javascript" src="assetse/javascript/game.js"
+		<script src="https://code.jquery.com/jquery-2.2.3.js" integrity="sha256-laXWtGydpwqJ8JA+X9x2miwmaiKhn8tVmOVEigRNtP4=" crossorigin="anonymous"></script>
+</head>
+<script type="text/javascript">
+//Variables
+var guessLeft = 5;
+var winTally = 0;
+var losses = 0;
+var guessesSoFar = " ";
+//use getElementById to link HTML ids too Java file
+//array 
+
+//array with all possible letter choices. Random letter will dray from this and it will also serve as all the possible guess choicse 
+var letterChoices= ['a','b','c','d','e','f','g','h','i','j','k','l','m','n','o','p','q','r','s','t','u','v','w','x','y','z'];	
+
+	// randomly selects a letter from the array above which will serve as the correct the user is trying to guess 
+document.onkeyup = function keypress(event) {
+	var correctLetter= letterChoices[Math.floor(Math.random() * letterChoices.length)];
+	
+	//records user keypress and sets var userGuess to that and makes sure the letter is recorded as lowercase 
+	var userGuess = String.fromCharCode(event.keyCode).toLowerCase();
+	var guessesSoFar = String.fromCharCode(event.keyCode).toLowerCase();
+
+if (userGuess !== correctLetter){	
+		document.getElementById("guessLeft").innerHTML = guessLeft--;
+		document.getElementById("guessesSoFar").innerHTML = guessesSoFar +" ";
+}else if (userGuess === correctLetter){
+		document.getElementById("winTally").innerHTML = winTally +1;
+}
+
+if (guessLeft === -1){
+		newGame();
+}
+
+
+}
+ 	
+</script>
+<body>
+<h1> The Psychic Game </h1>
+
+<div id="game">
+<p> Guess What Letter I'm thinking of: </p>
+</div>
+
+<p> Wins: <span id="winTally"> 0 </span> </p>
+<p> Losses: <span id="losses"> 0 </span> </p>
+<p> Guesses Left: <span id="guessLeft"> 5 </span> </p>
+<p id="guessesSoFar"> Guesses So Far <span id="guessesSoFar"></span> </p>
+
+</body>
+</html>

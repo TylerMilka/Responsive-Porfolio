@@ -47,17 +47,6 @@ document.onkeyup = function(event) {
 			ties++;
 		}  
 
-		// Taking the tallies and displaying them in HTML
-		var html = "<p>Press r, p or s to start playing</p>" +
-		"<p>wins: " + 
-		wins + 
-		"</p>" +
-		"<p>losses: " + 
-		losses + 
-		"</p>" +
-		"<p>ties: " + 
-		ties + 
-		"</p>";
 
 		// Placing the html into the game ID
 		document.querySelector('#game').innerHTML = html;
