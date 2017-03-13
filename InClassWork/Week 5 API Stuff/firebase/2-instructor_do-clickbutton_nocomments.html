@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Click Button with Firebase!</title>
+
+	<!-- linking you html file to firebase library for real time updates -->
+	<script src="https://www.gstatic.com/firebasejs/live/3.0/firebase.js"></script>
+</head>
+<body>
+
+	<!-- records the ammount of clicks to the firebase super fast -->
+	<h1>Ouch! You've clicked me <span id="clickValue"></span> times!</h1>
+
+	<!-- button that is to be click linked to the click counter -->
+	<button id="clickButton">Click Me!!!!</button>
+
+
+	<!--  jQuery-->
+	<script src="https://code.jquery.com/jquery-2.2.1.min.js"></script>
+	
+
+<!-- ================================================================================== -->
+
+	<script>
+
+	// Link to our firebase Database with credentials
+	var config = {
+		apiKey: "AIzaSyAJS4YQWU5DmESeYueG1qH1NGkjv3DncEY",
+		authDomain: "fir-click-counter-7cdb9.firebaseapp.com",
+		databaseURL: "https://fir-click-counter-7cdb9.firebaseio.com",
+		storageBucket: "fir-click-counter-7cdb9.appspot.com",
+	};
+
+	//initializing our firebase app
+	firebase.initializeApp(config);
+
+	// VARIABLES
+	// --------------------------------------------------------------------------------
+
+	//  returning the database from the firebase object by using a method;
+	var database = firebase.database();
+
+	// counter 
+	var clickCounter = 0;	
+	
+
+	// FUNCTIONS + EVENTS
+	// --------------------------------------------------------------------------------
+
+	// on click of button witoh the ID "clickButton" do stuff
+
+	$("#clickButton").on("click", function() {
+
+		// 	// 1.update counter in javascript
+		clickCounter++;
+
+		// 	// 2. update the database
+		database.ref().set({
+			clickCount: clickCounter
+		});
+	})
+
+	// MAIN PROCESS + INITIAL CODE
+	// --------------------------------------------------------------------------------
+
+	// differences of variables referenced on screen
+	database.ref().on("value", function(snapshot) {
+
+		// OUR WHOLE FREAKING DATABASE
+		console.log(snapshot.val());
+
+		//grabbing click countCount from the database, and
+		//use jQuery to update the DOM 
+		$("#clickValue").html(snapshot.val().clickCount);
+
+		//INITIAL load of the page, set the clickCounter
+		//to something besides 0
+		clickCounter = snapshot.val().clickCount;
+
+	// 
+	}, function (errorObject) {
+
+		// 
+	  	console.log("The read failed: " + errorObject.code);
+	
+	});
+
+	</script>
+
+</body>
+</html>

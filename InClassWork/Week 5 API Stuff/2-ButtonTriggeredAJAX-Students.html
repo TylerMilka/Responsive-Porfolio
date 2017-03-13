@@ -1,6 +1,6 @@
 <html>
 
-<head> 
+<head>
     <title>Quoth the Giphy</title>
 </head>
 
@@ -8,38 +8,36 @@
     <div id="buttons">
         <button data-person="arnold schwarzenegger">I'll be back</button>
         <button data-person="michael j fox">My happiness grows in direct proportion to my acceptance, and in inverse proportion to my expectations.</button>
-        <button data-person="Bojack Horseman"> Do the Bojack. </button>  <!-- prefix needed to have valid HTML and custom attribute is "Bojack Horseman" -->
-        <button data-person="Leonard DiCaprio"> ROOOOOSSSEEE. </button> <!-- -person is completely arbitrary. could be data-foo, data-celebrity -->
-  
+        <button data-person="Bojack Horseman"> Do the Bojack. </button>
+        <!-- prefix needed to have valid HTML and custom attribute is "Bojack Horseman" -->
+        <button data-person="Leonard DiCaprio"> ROOOOOSSSEEE. </button>
+        <!-- -person is completely arbitrary. could be data-foo, data-celebrity -->
     </div>
-
     <div id="gifsAppearHere">
     </div>
-
-<script src='http://code.jquery.com/jquery-2.1.3.min.js'></script>
-<script type="text/javascript">
-
+    <script src='http://code.jquery.com/jquery-2.1.3.min.js'></script>
+    <script type="text/javascript">
     //$('button') links the button data-person to this which can then be set to different people 
 
     $('button').on('click', function() { //activates button via on click function
-        var p = $(this).data('person');     // this = button    //var p  = button data-person = "whatever name is included here"
+        var p = $(this).data('person'); // this = button    //var p  = button data-person = "whatever name is included here"
         var queryURL = "http://api.giphy.com/v1/gifs/search?q=" + p + "&api_key=dc6zaTOxFJmzC&limit=10"; //links to API
 
-        $.ajax({                    //object passed into AJAX
-                url: queryURL,          //retreives data from the URL API data-base
+        $.ajax({ //object passed into AJAX
+                url: queryURL, //retreives data from the URL API data-base
                 method: 'GET'
             })
-            .done(function(response) {     //is is what is what is calledbacked/returned from the API it is accessing
-                var results = response.data;        //
+            .done(function(response) { //is is what is what is calledbacked/returned from the API it is accessing
+                var results = response.data; //
 
-                for (var i = 0; i < results.length; i++) {   //runs through all the results of the API
+                for (var i = 0; i < results.length; i++) { //runs through all the results of the API
                     var gifDiv = $('<div class="item">')
 
-                    var rating = results[i].rating; 
+                    var rating = results[i].rating;
 
                     var p = $('<p>').text("Rating: " + rating);
 
-                    var personImage = $('<img>');                                 //linking personImage to an <img> tag that will appear in the dom
+                    var personImage = $('<img>'); //linking personImage to an <img> tag that will appear in the dom
                     personImage.attr('src', results[i].images.fixed_height.url); // g
 
                     gifDiv.append(p)
@@ -49,7 +47,7 @@
                 }
             });
     });
-</script>
+    </script>
 </body>
 
-</html>
+</html>ett
